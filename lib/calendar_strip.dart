@@ -349,6 +349,7 @@ class CalendarStripState extends State<CalendarStrip>
     return Column(children: [
       Container(
         alignment: Alignment.centerLeft,
+        margin: EdgeInsets.only(bottom: 10.0, left: 10.0),
         child:monthLabelWidget(monthLabel),
       ),
       Container(
