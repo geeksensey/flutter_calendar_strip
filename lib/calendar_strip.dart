@@ -347,7 +347,10 @@ class CalendarStripState extends State<CalendarStrip>
     }
     monthLabel = getMonthLabel();
     return Column(children: [
-      monthLabelWidget(monthLabel),
+      Container(
+        alignment: Alignment.centerLeft,
+        child:monthLabelWidget(monthLabel),
+      ),
       Container(
           padding: EdgeInsets.all(0),
           child: GestureDetector(
